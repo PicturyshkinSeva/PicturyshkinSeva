@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from os.path import join, abspath
+import csv
+
+music = ()
+
+with open ('p1opo.csv', mode='rt', encoding='utf-8', newline='') as read_csv:
+    for row in read_csv:
+        artist = row[0]
+        album = row[1]
+
+        nametuple = row(artist, album)
+        music = music.__add__(nametuple)
+
+print(music)
+
+print(type(music))
+
+
+
+
+
+
+
+
+        
+        
+        
+#    reader = csv.DictReader(src)
+#    for row in reader:
+#        print(row)
+#        print(row['CheckUID']) #, row['id_tt_cl'], row['id_tov_cl'], row['Price_retail'], row['Quantity'], row['BasePrice'],                   row['BaseSum'], row['date_ch'], row['time_ch'], row['order_type'])
+
+
+
+
+
+#    reader = csv.DictReader(src)    headers = next(reader)
+#    print('Headers: ', headers)
+#    for row in reader:
+#        for n in range(row):
+#        print(row)
+#        print(row['CheckUID'], row['id_tt_cl'], row['id_tov_cl'], row['Price_retail'], row['Quantity'], row['BasePrice'], row['BaseSum'], row['date_ch'], row['time_ch'], row['order_type'])
+
+
+#lines = {}
+#add.lines = 
+
+#for m in line1:
+
+#    lines[m['id']] = {
+
+#    'id' : m['id_tt_cl'],
+
+#    }
+print ('lines')
+print ('END')
