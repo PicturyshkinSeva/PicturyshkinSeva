@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+'''code sending an email from mail.ru in python'''
+
+import smtplib
+#choise mail server use protocol and port
+send_email = smtplib.SMTP('smtp.mail.ru', 25)
+#enable encription tls
+send_email.starttls()
+#enter login and password for sender's email
+send_email.login('example_sender@mail.ru','sender email token')
+#enter sender mail, enter receiver, enter text
+send_email.sendmail("example_sender@mail.ru",
+                    "example_receiver@mail.ru",
+                    "go to job!",
+#off                    )
+send_email.quit()
+print ('END')
