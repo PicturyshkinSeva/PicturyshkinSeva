@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+import pandas as pd
+file_location = "test.xlsx"
+sheet = pd.read_excel(file_location)
+a=sheet
+
+w=a['dlg_id']
+x=a['line_n']
+y=a['role']
+z=a['text']
+z1=z.split()
+#yy = a[y['manager']
+
+for xx in z:
+    if 'здравствуйте' in xx:
+        print('lol    ')
+    if 'меня' and 'зовут' in xx:
+        print('HOOKER')
+    if 'компания' in xx:
+        print('pubic tubercle    ')
+    if 'До свидания'in xx:
+        print('rotting2')
+#    if 'Все'+'хорошо' in xx:
+#        print('rotting')   
+#    if 'До' and 'свидания' in xx:
+#        print('jjjj')
+else:
+    pass
+
+
+
+#print(y)
