@@ -8,7 +8,7 @@ w=a['dlg_id']
 x=a['line_n']
 y=a['role']
 z=a['text']
-z1=z.split()
+
 #yy = a[y['manager']
 
 for xx in z:
